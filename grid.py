@@ -1,4 +1,4 @@
-from random import shuffle, randrange
+from random import shuffle
 import math
 
 #Input variable for pairs and defines card_amount variable

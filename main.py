@@ -1,8 +1,6 @@
-from random import shuffle
 import pygame
 from grid import *
-import sys
-from functions import boxes, rectPos, numbers, boxIndex, rowIndex, fel, gridNumber, score
+from functions import boxes, rectPos, numbers, fel, gridNumber, score
 
 pygame.init()
 

@@ -1,5 +1,4 @@
 import pygame
-import sys
 from grid import *
 
 pygame.init()
@@ -18,19 +17,11 @@ screen = pygame.display.set_mode((X, Y))
 # Define Array that saves positions
 rectPos = []
 
-# Define Array that saves grid index
-boxIndex = []
-
-# Define Array that saves row Index
-rowIndex = []
-
 # Function that draws Grid on the screen
 def boxes(row):
-    rowIndex.append(row)
     posY = (Y // len(grid) // 1.5)
     posX = (X // len(grid[0]) // 1.5)
     for i in range(0, len(grid[row])):
-        boxIndex.append(i)
         pos = [(i+1)*posX, (row+1)*posY]
         box = pygame.Rect(pos[0], pos[1], (X // len(grid[0]) // 1.5 * 0.9), (Y // len(grid) // 1.5 * 0.9))
         margin = pygame.Rect((i+1)*posX, (row+1)*posY, (X // len(grid[0]) // 1.5), (Y // len(grid)) // 1.5 )
